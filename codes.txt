@@ -1,0 +1,15 @@
+ocean
+ocean
+orná_půda
+chmelnice
+vinice
+zahrada
+ovocný_sad
+trvalý_travní_porost
+trvalý_travní_porost
+barren
+lesní_pozemek
+vodní_plocha
+nuclear_plant
+zastavěná_plocha_a_nádvoří
+ostatní_plocha

@@ -1,0 +1,50 @@
+15-02-2021 Po 21:18
+
+1) Zvolit PyTorch nebo Tensorflow na základě:
+	- dostupných příkladů
+	- dotatečně opensource
+	- snadné nasazení na produkci
+
+2) Zpracování rastrových dat:
+	- trénovací data z družice sentinel
+	  popis: https://towardsdatascience.com/land-use-land-cover-classification-with-deep-learning-9a5041095ddb
+	  download: na stránce http://madm.dfki.de/downloads hledej a stáhni EuroSAT RGB a EuroSAT all 13bands
+	- segmentace (náše TRAIN data jsou 64x64 px)
+
+3) Docker
+	docker run --gpus all -it -v $(pwd):/tf/notebooks -p 8888:8888 tensorflow/tensorflow:latest-gpu-jupyter
+
+
+4)Odkazy
+	4.1) Priklady
+
+	- Pytorch fastai clasiif. with confusion matrix:
+	  https://github.com/shakasom/Deep-Learning-for-Satellite-Imagery/blob/master/LULC_Final.ipynb
+
+	- Resnet
+	  https://towardsdatascience.com/how-to-train-an-image-classifier-in-pytorch-and-use-it-to-perform-basic-inference-on-single-images-99465a1e9bf5
+	  # Tutorial on training ResNet with your own images
+
+	- Popular PyTorch models:
+	  https://pytorch.org/docs/stable/torchvision/models.html
+
+	- Deep Learning for Semantic Segmentation of Aerial and Satellite Imagery
+	  https://www.azavea.com/blog/2017/05/30/deep-learning-on-aerial-imagery/
+
+	
+	4.2.) Srovnani PyTorch vs Tensorflow
+
+	- SIMPLILEARN
+	  https://www.simplilearn.com/keras-vs-tensorflow-vs-pytorch-article
+	  # ...TensorFlow also beats Pytorch in deploying trained models to production, thanks to the
+	  # TensorFlow Serving framework. Pytorch offers no such framework, so developers need to use
+	  # Django or Flask as a back-end server...
+	
+	- REALPYTHON
+	  https://realpython.com/pytorch-vs-tensorflow/
+		# PyTorch:
+		# Better memory and optimization
+		# More sensible error messages
+		# Finer-grained control of model structure
+		# More transparent model behavior
+		# Better compatibility with NumPy
